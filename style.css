@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+}
+
+#back {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+}
+
+#top #topwrapper {
+    width: 80%;
+    max-width: 1920px;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 0;
+}
+
+#nav #leftwrapper,
+#rightwrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.2rem;
+    pointer-events: all;
+}
+
+#top #topwrapper #leftwrapper img {
+    width: 8rem;
+    mix-blend-mode: difference;
+}
+
+#top #hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    overflow: hidden;
+}
+
+#top #hero #lefthero {
+    width: 55%;
+}
+
+#top #hero #lefthero .elem {
+    width: 100%;
+    height: 10rem;
+    position: relative;
+    overflow: hidden;
+}
+
+#top #hero #lefthero .elem h1 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: 8vw;
+    line-height: 1.2;
+    color: transparent;
+    -webkit-text-stroke: 4px #fff;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+#top #hero #lefthero .elem h1:nth-child(1) {
+    top: 0;
+}
+
+#top #hero #lefthero button {
+    padding: 1.2vw 2vw;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    overflow: hidden;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+#top #hero #righthero {
+    width: 25%;
+}
+
+#top #hero #righthero img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#top #hero #righthero p {
+    font-size: 12px;
+    font-weight: 100;
+    text-align: right;
+    margin: 2rem 0;
+}
+
+#top #hero #righthero p:nth-child(1) {
+    margin: 4rem 0;
+}
+
+#back {
+    width: 100%;
+    height: 100vh;
+}
+
+#back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media(max-width:992px) {
+    #top #topwrapper {
+        width: 95%;
+        height: 100vh;
+    }
+
+    #nav {
+        padding: 0;
+    }
+
+    #nav #leftwrapper,
+    #rightwrapper {
+        gap: 15px;
+    }
+
+    a {
+        font-size: 10px;
+        letter-spacing: 0.05rem;
+    }
+
+    #top #topwrapper #leftwrapper img {
+        width: 6.5rem;
+    }
+
+    #top #hero #lefthero {
+        width: 70%;
+    }
+
+    #top #hero #lefthero .elem {
+        height: 7.5rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #top #hero #lefthero .elem h1 {
+        font-size: 10.5vw;
+        -webkit-text-stroke: 2px #fff;
+        line-height: 1;
+        letter-spacing: 5px;
+    }
+
+    #top #hero #lefthero button {
+        padding: 1vw 1.5vw;
+        font-size: 1rem;
+    }
+
+    #top #hero #righthero {
+        width: 30%;
+    }
+
+    #top #hero #righthero img {
+        height: 130px;
+    }
+
+    #top #hero #righthero p {
+        font-size: 8.5px;
+        text-align: right;
+        margin: 1.1rem 0;
+    }
+
+    #top #hero #righthero p:nth-child(1) {
+        margin: 1.5rem 0;
+    }
+}
